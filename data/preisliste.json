@@ -31,7 +31,7 @@
     },
     {
         "id" : "rueck",
-        "titel" : "Becherrückgabe",
+        "titel" : "Pfandrückgabe",
         "preis" : 0.00,
         "pfand" : -1.00,
         "anzahl" : 0
