@@ -6,26 +6,26 @@
         "anzahl" : 0
     },
     {
+        "titel" : "Punsch",
+        "preis" : 2.50,
+        "pfand" : 1.00,
+        "anzahl" : 0
+    },
+    {
         "titel" : "Schuss",
         "preis" : 1.00,
         "pfand" : 0.00,
         "anzahl" : 0
     },
     {
-        "titel" : "Punsch",
-        "preis" : 3.00,
-        "pfand" : 1.00,
-        "anzahl" : 0
-    },
-    {
         "titel" : "Hot Aperol",
-        "preis" : 3.50,
+        "preis" : 4.50,
         "pfand" : 1.00,
         "anzahl" : 0
     },
     {
         "titel" : "Kekse",
-        "preis" : 2.00,
+        "preis" : 3.00,
         "pfand" : 0.00,
         "anzahl" : 0
     },
