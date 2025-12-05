@@ -62,12 +62,12 @@ function addItem(item){
 	// Label
 	let label = document.createElement("label");
 	label.classList.add("col-5", "col-form-label", "fs-6");
-	label.innerHTML = item.titel + "<br> (" + getEuroString(item.preis) + ")";
+	label.innerHTML = item.titel + "<br> (" + getEuroString(item.preis) + " | " + getEuroString(item.pfand)+ ")";
 	outer_row.appendChild(label);
 	
 	// 2nd Col
 	let outer_cols = document.createElement("div");
-	outer_cols.classList.add("col-7", "mb-4");
+	outer_cols.classList.add("col-7");
 	outer_row.appendChild(outer_cols);
 	
 	// Inner Row
@@ -182,6 +182,4 @@ function getEuroString(text){
 function resetAbrechnung(){
 	for(let i in abrechnung)
 		abrechnung[i] = 0;
-
 }
-
