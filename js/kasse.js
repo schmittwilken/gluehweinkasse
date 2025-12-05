@@ -56,13 +56,13 @@ function addItem(item){
 
 	// Outer Row
 	let outer_row = document.createElement("div");
-	outer_row.classList.add("form-group", "row");
+	outer_row.classList.add("form-group", "row", "align-items-center");
 	root.appendChild(outer_row);
 
 	// Label
 	let label = document.createElement("label");
 	label.classList.add("col-5", "col-form-label", "fs-6");
-	label.innerHTML = item.titel + "<br> (" + getEuroString(item.preis) + " | " + getEuroString(item.pfand)+ ")";
+	label.innerHTML = "<strong>" + item.titel + "</strong><br> (" + getEuroString(item.preis) + " | " + getEuroString(item.pfand)+ ")";
 	outer_row.appendChild(label);
 	
 	// 2nd Col
@@ -72,7 +72,7 @@ function addItem(item){
 	
 	// Inner Row
 	let inner_row = document.createElement("div");
-	inner_row.classList.add("row");
+	inner_row.classList.add("row", "align-items-center");
 	outer_cols.appendChild(inner_row);
 	
 	// - Button
@@ -82,7 +82,7 @@ function addItem(item){
 	
 	let down_button = document.createElement("button");
 	down_button.id = item.id + "0";
-	down_button.classList.add("btn-danger", "fs-4", "px-3");
+	down_button.classList.add("btn-danger", "fs-4", "px-3", "fw-bolder");
 	down_button.innerText = "-";
 	down_div.appendChild(down_button);
 	
@@ -93,7 +93,7 @@ function addItem(item){
 	
 	let count = document.createElement("div");
 	count.id = item.id;
-	count.classList.add("px-2", "py-1", "fs-4", "border");
+	count.classList.add("px-1", "py-1", "fs-4", "border", "text-center");
 	count.innerText = "0";
 	count_div.appendChild(count);
 	
@@ -104,7 +104,7 @@ function addItem(item){
 	
 	let up_button = document.createElement("button");
 	up_button.id = item.id + "1";
-	up_button.classList.add("btn-success", "fs-4", "px-3");
+	up_button.classList.add("btn-success", "fs-4", "px-3", "fw-bolder");
 	up_button.innerText = "+";
 	up_div.appendChild(up_button);
 
@@ -152,7 +152,7 @@ function updateRechnung(){
 	rechnung.innerText="";
 
 	let summe = document.createElement("div");
-	summe.classList.add("fs-1");
+	summe.classList.add("fs-1", "fw-bold");
 	summe.innerText = getEuroString(abrechnung.gesamtsumme);
 	rechnung.appendChild(summe);
 
