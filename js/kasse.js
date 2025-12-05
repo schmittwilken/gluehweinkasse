@@ -62,7 +62,7 @@ function addItem(item){
 	// Label
 	let label = document.createElement("label");
 	label.classList.add("col-5", "col-form-label", "fs-6");
-	label.innerText = item.titel + "<br> (" + getEuroString(item.preis) + ")";
+	label.innerHTML = item.titel + "<br> (" + getEuroString(item.preis) + ")";
 	outer_row.appendChild(label);
 	
 	// 2nd Col
@@ -184,3 +184,4 @@ function resetAbrechnung(){
 		abrechnung[i] = 0;
 
 }
+
