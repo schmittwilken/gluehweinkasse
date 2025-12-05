@@ -61,13 +61,13 @@ function addItem(item){
 
 	// Label
 	let label = document.createElement("label");
-	label.classList.add("col-sm-5", "col-form-label", "fs-5");
+	label.classList.add("col-5", "col-form-label", "fs-6");
 	label.innerText = item.titel + " (" + getEuroString(item.preis) + ")";
 	outer_row.appendChild(label);
 	
 	// 2nd Col
 	let outer_cols = document.createElement("div");
-	outer_cols.classList.add("col-sm-7", "mb-4");
+	outer_cols.classList.add("col-7", "mb-4");
 	outer_row.appendChild(outer_cols);
 	
 	// Inner Row
@@ -77,34 +77,34 @@ function addItem(item){
 	
 	// - Button
 	let down_div = document.createElement("div");
-	down_div.classList.add("col-sm-2");
+	down_div.classList.add("col");
 	inner_row.appendChild(down_div);
 	
 	let down_button = document.createElement("button");
 	down_button.id = item.id + "0";
-	down_button.classList.add("btn-danger", "fs-3", "px-3");
+	down_button.classList.add("btn-danger", "fs-4", "px-3");
 	down_button.innerText = "-";
 	down_div.appendChild(down_button);
 	
 	// Counter
 	let count_div = document.createElement("div");
-	count_div.classList.add("col-sm-3");
+	count_div.classList.add("col");
 	inner_row.appendChild(count_div);
 	
 	let count = document.createElement("div");
 	count.id = item.id;
-	count.classList.add("px-2", "py-1", "fs-3", "border");
+	count.classList.add("px-2", "py-1", "fs-4", "border");
 	count.innerText = "0";
 	count_div.appendChild(count);
 	
 	// + Button
 	let up_div = document.createElement("div");
-	up_div.classList.add("col-sm-2");
+	up_div.classList.add("col");
 	inner_row.appendChild(up_div);
 	
 	let up_button = document.createElement("button");
 	up_button.id = item.id + "1";
-	up_button.classList.add("btn-success", "fs-3", "px-3");
+	up_button.classList.add("btn-success", "fs-4", "px-3");
 	up_button.innerText = "+";
 	up_div.appendChild(up_button);
 
